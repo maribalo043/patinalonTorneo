@@ -1,0 +1,130 @@
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f5f5f5;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          /*overflow-x: auto;*/
+      }
+    
+    .titulo {
+        display: flex;
+        flex-direction: row;
+       
+    }
+    
+    .digital-clock {
+        font-size: 1em;
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        margin-left: 1ch;
+    }
+    
+      .container {
+          max-width: 800px;
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          overflow: auto;
+      }
+      form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: auto;
+        font-size: 1vh;
+      }
+      label {
+        font-size: 1.5vh;
+          display: block;
+          margin: 5px;
+          font-weight: bold;
+      }
+      select{
+        width: 20vh;
+        height: 2.5vh;
+        margin: 5px;
+      }
+      button {
+          padding: 10px;
+          background-color: black;
+          text-decoration: double;
+          font-weight: bold;
+          color: #4caf50;
+          border: none;
+          cursor: pointer;
+          margin: 2vh;
+          width: 9.5vh;
+      }
+
+      button:hover {
+          background-color: red;
+          color: black;
+          font-weight: bolder;
+          transition: 1s;
+      }
+
+      h2 {
+          color: #333;
+      }
+
+      .table-container {
+          overflow: auto;
+          margin-bottom: 20px;
+      }
+
+      .table-container table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+      }
+
+      th, td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: left;
+      }
+
+      th {
+          background-color: #4caf50;
+          color: white;
+      }
+
+      #clasificacionGrupo1 th,
+      #clasificacionGrupo2 th {
+          background-color: #2196F3;
+      }
+
+      #clasificacionGrupo1,
+      #clasificacionGrupo2 {
+          width: 100%;
+          border-collapse: collapse;
+      }
+
+      #clasificacionGrupo1 td,
+      #clasificacionGrupo2 td {
+          background-color: #f2f2f2;
+      }
+
+      .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+      
+@media (max-width:600px){
+    form{
+        font-size: 1.5vh;
+    };
+    *{
+        overflow-x: scroll;
+    }
+}
+@media (max-width:450px){
+    .titulo{
+        letter-spacing: 0;
+    }
+}

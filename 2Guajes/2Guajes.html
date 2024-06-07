@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo Patinalon</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/prueba.css">
+    <script defer src="SelecionarFechaGuajes.js"></script>
+</head>
+<body>
+    <div class="container">
+      <h1 class="titulo">PARTIDOS <a href="/index.html" class="ml-5 btn btn-primary">Volver atrás</a></h1>
+        <div class="clearfix"></div>
+
+        <div class="table-container">
+            <table id="tablaGrupo" class="table table-bordered">
+              <thead id="cabezeraTabla">
+              <tr>
+                <th colspan="6" id="nombreGrupo" class="bg-danger text-light">Partidos</th>
+              </tr>
+                <tr class="bg-danger text-light">
+                    <th>Equipo</th>
+                    <th>Resultado</th>
+                    <th>Equipo</th>
+                    <th>Hora</th>
+                    <th>Pista</th>
+                    <th>Aplazamiento</th>
+                </tr>
+              </thead>
+              <tbody id="cuerpoGrupo">
+                
+              </tbody>
+            </table>
+        </div>
+
+        <div class="clearfix"></div> <!-- Limpia el flotado y permite que las tablas de clasificación se ubiquen debajo -->
+
+        <div class="table-container">
+            <table id="tablaClasificacion" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th colspan="7" id="clasificacionGrupo" class="bg-danger text-light">Clasificación Grupo</th>
+                </tr>
+                <tr class="bg-danger text-light">
+                    <th>Equipo</th>
+                    <th>Puntos</th>
+                    <th>GF</th>
+                    <th>GC</th>
+                    <th>PG</th>
+                    <th>PP</th>
+                    <th>PE</th>
+                </tr>
+              </thead>
+              <tbody id="cuerpoClasif">
+                <tr>
+                    
+                </tr>
+              </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS (jQuery debe estar incluido antes de este script) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

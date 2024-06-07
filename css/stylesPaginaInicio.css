@@ -1,0 +1,108 @@
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background: repeating-linear-gradient(90deg, red, red 150px, black 50px, black 200px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 65%; /* Ajusta según sea necesario */
+    margin: 20px auto; /* Centra el contenedor y añade margen superior e inferior */
+}
+
+.container a {
+    width: 100%;
+    height: 80px; /* Ajusta según sea necesario */
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0; /* Añade espacio entre los enlaces */
+    text-decoration: none;
+    border-radius: 5vh;
+    transition: background 0.3s ease; /* Mantén la transición de fondo */
+}
+
+    a.guajes:hover{
+    background-color: orange;
+  }
+  a.promesas:hover{
+    background-color: orange;
+  }
+
+h1.titulo {
+    font-family: 'roboto';
+    letter-spacing: 1vh;
+    text-align: center; /* Centra el texto */
+    font-size: 2em; /* Ajusta según sea necesario */
+    margin: 20px 0; /* Añade margen superior e inferior al título */
+    transition: font-size 0.5s ease; /* Añade transición al tamaño del texto */
+    background: none; /* Elimina el fondo gris */
+}
+
+h2 {
+    text-decoration: none;
+    color: black;
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.redesSociales {
+    padding: 20px; /* Añade relleno al pie de página */
+    margin-top: 20px; /* Añade margen superior al pie de página */
+}
+ 
+.contenedor{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.contenedor a{
+    height: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5vh;
+}
+.contenedor a:hover{
+    background-color: darkgray;
+    transition: 0.5s ease;
+}
+
+.red-social {
+    background-color: white; /* Añade fondo blanco */
+    border-radius: 50%; /* Añade bordes redondeados */
+    padding: 10px; /* Añade relleno */
+    transition: background 0.3s ease; /* Añade transición de fondo */
+}
+
+.red-social:hover {
+    background-color: #ddd; /* Cambia el fondo a gris al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajusta para pantallas más pequeñas */
+    }
+
+    .container a {
+        height: 60px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    h1.titulo {
+        font-size: 1.5em; /* Ajusta el tamaño del título en pantallas más pequeñas */
+    }
+}
