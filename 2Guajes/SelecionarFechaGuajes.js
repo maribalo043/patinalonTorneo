@@ -275,22 +275,10 @@ function mostrarGolesDeJugadores() {
 
 // Al cargar la página, actualizar los puntos, mostrar los partidos y mostrar los goles de los jugadores en las tablas del HTML
 window.addEventListener('load', function () {
-    // Obtener el nombre del archivo HTML actual
-    var nombreArchivo = window.location.pathname.split("/").pop();
-
-    // Verificar el nombre del archivo y llamar a la función correspondiente
-    if (nombreArchivo === "jugadores.html") {
-        // Llamar a la función correspondiente para nombre1.html
         mostrarGolesDeJugadores();
-    } else if (nombreArchivo === "2Guajes.html") {
-        // Llamar a la función correspondiente para nombre2.html
         actualizarPuntos();
         mostrarPartidosEnTabla();
         mostrarEquiposOrdenadosEnTabla();
-    } else {
-        // En caso de que el nombre del archivo no coincida con ninguno esperado
-        console.error("El nombre del archivo HTML no coincide con ningún valor esperado.");
-    }
 });
 
 
