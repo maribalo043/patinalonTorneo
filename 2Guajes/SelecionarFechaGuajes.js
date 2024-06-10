@@ -68,24 +68,24 @@ var jugador7Equipo1 = new Jugador("Diego", 0);
 // Equipo 2
 var jugador1Equipo2 = new Jugador("Arian", 0);
 var jugador2Equipo2 = new Jugador("Miguel Amores", 0);
-var jugador3Equipo2 = new Jugador("Carencias", 0);
+var jugador3Equipo2 = new Jugador("Carencias", 1);
 var jugador4Equipo2 = new Jugador("Claudia", 0);
 var jugador5Equipo2 = new Jugador("Manu", 0);
-var jugador6Equipo2 = new Jugador("Marcos PJ", 0);
+var jugador6Equipo2 = new Jugador("Marcos PJ", 2);
 
 // Equipo 3
 var jugador1Equipo3 = new Jugador("Chus", 0);
-var jugador2Equipo3 = new Jugador("Yago", 0);
+var jugador2Equipo3 = new Jugador("Yago", 2);
 var jugador3Equipo3 = new Jugador("Gemma", 0);
-var jugador4Equipo3 = new Jugador("Fernan", 0);
-var jugador5Equipo3 = new Jugador("Carlos", 0);
-var jugador6Equipo3 = new Jugador("Patri", 0);
+var jugador4Equipo3 = new Jugador("Fernan", 1);
+var jugador5Equipo3 = new Jugador("Carlos", 2);
+var jugador6Equipo3 = new Jugador("Patri", 1);
 
 // Equipo 4
 var jugador1Equipo4 = new Jugador("Irene", 0);
 var jugador2Equipo4 = new Jugador("Javi", 0);
 var jugador3Equipo4 = new Jugador("Ruben", 0);
-var jugador4Equipo4 = new Jugador("Mario", 0);
+var jugador4Equipo4 = new Jugador("Mario", 1);
 var jugador5Equipo4 = new Jugador("Alba", 0);
 
 // Equipo 5
@@ -102,20 +102,10 @@ var jugador3Equipo6 = new Jugador("Aitor", 0);
 var jugador4Equipo6 = new Jugador("Martín", 0);
 var jugador5Equipo6 = new Jugador("Lúa", 0);
 
-// Definir la lista de jugadores
-var jugadores = [
-    jugador1Equipo1, jugador2Equipo1, jugador3Equipo1, jugador4Equipo1, jugador5Equipo1, jugador6Equipo1, jugador7Equipo1,
-    jugador1Equipo2, jugador2Equipo2, jugador3Equipo2, jugador4Equipo2, jugador5Equipo2, jugador6Equipo2,
-    jugador1Equipo3, jugador2Equipo3, jugador3Equipo3, jugador4Equipo3, jugador5Equipo3, jugador6Equipo3,
-    jugador1Equipo4, jugador2Equipo4, jugador3Equipo4, jugador4Equipo4, jugador5Equipo4,
-    jugador1Equipo5, jugador2Equipo5, jugador3Equipo5, jugador4Equipo5, jugador5Equipo5,
-    jugador1Equipo6, jugador2Equipo6, jugador3Equipo6, jugador4Equipo6, jugador5Equipo6
-];
-
 
 // Partidos del Lunes
-var partido1Lunes = new Partido(equipo1, equipo2, "0-0", "Lunes 20:10", "La felguera", false);
-var partido2Lunes = new Partido(equipo3, equipo4, "0-0", "Lunes 20:30", "La felguera", false);
+var partido1Lunes = new Partido(equipo1, equipo2, "0-3", "Lunes 20:10", "La felguera", false);
+var partido2Lunes = new Partido(equipo3, equipo4, "6-1", "Lunes 20:30", "La felguera", false);
 var partido3Lunes = new Partido(equipo5, equipo6, "0-0", "Lunes 20:50", "La felguera", false);
 var partido4Lunes = new Partido(equipo1, equipo3, "0-0", "Lunes 21:10", "La felguera", false);
 var partido5Lunes = new Partido(equipo2, equipo6, "0-0", "Lunes 21:30", "La felguera", false);
@@ -131,6 +121,18 @@ var partido5Miercoles = new Partido(equipo2, equipo5, "0-0", "Miércoles 20:50",
 var partido6Miercoles = new Partido(equipo4, equipo6, "0-0", "Miércoles 21:10", "La felguera", false);
 var partido7Miercoles = new Partido(equipo2, equipo3, "0-0", "Miércoles 21:30", "La felguera", false);
 var partido8Miercoles = new Partido(equipo1, equipo5, "0-0", "Miércoles 21:50", "La felguera", false);
+
+// Definir la lista de jugadores
+var jugadores = [
+    jugador1Equipo1, jugador2Equipo1, jugador3Equipo1, jugador4Equipo1, jugador5Equipo1, jugador6Equipo1, jugador7Equipo1,
+    jugador1Equipo2, jugador2Equipo2, jugador3Equipo2, jugador4Equipo2, jugador5Equipo2, jugador6Equipo2,
+    jugador1Equipo3, jugador2Equipo3, jugador3Equipo3, jugador4Equipo3, jugador5Equipo3, jugador6Equipo3,
+    jugador1Equipo4, jugador2Equipo4, jugador3Equipo4, jugador4Equipo4, jugador5Equipo4,
+    jugador1Equipo5, jugador2Equipo5, jugador3Equipo5, jugador4Equipo5, jugador5Equipo5,
+    jugador1Equipo6, jugador2Equipo6, jugador3Equipo6, jugador4Equipo6, jugador5Equipo6
+];
+
+
 
 
 // Definir la variable partidos y agregar los partidos relevantes
@@ -269,9 +271,6 @@ function mostrarGolesDeJugadores() {
         console.error("No se encontró el elemento con el ID 'tablaGolesJugadores'.");
     }
 }
-
-
-
 
 // Al cargar la página, actualizar los puntos, mostrar los partidos y mostrar los goles de los jugadores en las tablas del HTML
 window.addEventListener('load', function () {
